@@ -1,0 +1,151 @@
+https://codepen.io/CarlosAA10/pen/OJPwbXX?editors=1100
+
+ 1.What is Semantic HTML? 
+ Semantic HTML is HTML that has a meaning and purpose behind its mark up. 
+ This means a well structured HTML page with accessibility and SEO. 
+
+2. What is HTML used for? 
+HTML is markup language that sets up the structure for a website. 
+
+3. What is an attribute and where do we put it?
+
+ an attribute is additional information about an element. 
+ it is always placed in the start tag. 
+
+4. What is the h1 tag used for? How many times should I use it on a page?
+The h1 tag is used to identify your main heading (biggest/important).
+There is no limit to how many h1 tags you can use, however convention states that h1 tags should be used on your most important headings, then least important ones will get the h2 -->  h6 based off their level of importance. 
+
+5. Name two tags that have required attributes. 
+img tags and href tags. 
+
+6. What do we put in the head of our HTML document? 
+the head element can contain a <title>, <style>, <base>, <link>, <meta> , <script>, and <noscript>.
+
+7. What is an id? 
+an id attribute is a unique id for an HTML element, but can only be assigned to one element. id's are also case sensitive.
+
+8. What elements can I add an id to? 
+you can add an id to any HTML element.
+
+9. How many times can I use the same id on a page? 
+only once.
+
+10. What is a class? 
+a class attribute is used to define equal styles for elements with the same class name, therefore any html elements with the same class attribute will be styled the same.Classes are also case-sensitive.
+
+11. What elements can I add a class to? 
+Any HTML element can be given the class attribute.
+
+12. How many times can I use the same class on a page? 
+Yes, you can use the same class on multiple elements.
+
+13. How do I get my link to open in a new tab?
+ you must first set an anchor tag to have a desired link or url in an href attribute. provided with some text inbetween the opening and closing tag you can click on the text and you will be directed to desired link.
+
+
+14. What is the alt attribute used for?
+ the alt attribute specifies an alternative text to be used when an image cannot be displayed. The value of the alt attribute  is for screen readers on a browser to help vision-impaired listeners to listen to the element. 
+
+15. How do I reference an id?
+ you reference an id in css with a '#'.
+
+16. What is the difference between a section and a div?
+ A div tag divides content in the page while section indicates a high level separation of the content into different sections.
+
+17. What is CSS used for? 
+CSS is used to style the marked up HTML we have constructed. CSS is the styling component to a website. 
+
+18. How to we select an element? 
+Example - every h2 on the page
+
+19. What is the difference between a class and an id? - Give me an example of when I might use each one
+
+20. How do we select classes in CSS?
+ you select classes in CSS as follows: .<className> 
+
+21. How do we select a p element with a single class of “human””?
+ .human p{}       
+
+22. What is a parent child selector? When would this be useful?
+ a selector that is used to select elements with a specified parent. this is useful when you have multiple classes inside of a class. 
+
+23. How do you select all links within a div with the class of sidebar? 
+div .sidebar a{}                      
+
+24. What is a pseudo selector? 
+a Pseudo selector is a CSS selector with a colon preceding them that have unique customization properties.  
+
+25. What do we use the change the spacing between lines? 
+line-height
+
+26. What do we use to change the spacing between letters?
+ letter-spacing 
+
+27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+text-transform: uppercase; 
+text-transform: lowercase; 
+text-transform:capitalize;
+
+28. How do I add a 1px border around my div that is dotted and black? 
+border:1px dotted black; 
+
+29. How do I select everything on the page? 
+with the universal selector ' * ' .
+
+30. How do I write a comment in CSS? 
+/* first before your comment, then at the end of your comment */
+
+31. How do I find out what file I am in, when I am using the command line?
+ pwd
+
+32. Using the command line - how do I see a list of files/folders in my current folder? 
+ls, ls -la for a detailed list directory contents, including hidden files.
+
+33. How do I remove a file via the command line? Why do I have to be careful with this? 
+rm <fileName>. This erases your file permanently, so becareful what you delete.
+
+34. Why should I use version control? 
+it helps with keeping track of change done by each contributor and prevents concurring work from conflicting.
+
+35. How often should I commit to github?
+ whenever you finish with a step or make a change, or frequent as to not lose progress.
+
+36. What is the command we would use to push our repo up to github? 
+git push -u origin branch-name. 
+
+37. Walk me through Lambda's git flow. 
+
+    first you fork your own version of the Repo.
+    then your name should appear infront of the repo name before the ' / '.
+    next you add your TL as a collaborator on forked repo in settings.
+    After that you clone your repo  and copy the link. 
+    Then, you go to your CLI and use the cd command to go to the directory you wish to clone the forked repo to.
+    next, you use ' git clone <repo link> ' command to clone the repo in your current directory.
+    Then, you will cd into the cloned repo by using the ' cd <repo-name> ' command.
+    Next, you will use the ' git checkout 0b 'firstname-lastname' ' command to create your own branch name for the repo.
+    Then, to add and commit changes ou will use the ' git add . ' command to add the repo changes followed by ' git commit -m "message stating what changes you made" ' to commit. 
+    After that, you can push your changes  by using the ' git push -u origin branch-name ' command. 
+    finally, you can submit a Pull Request to your PM. 
+
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element? 
+    an inline element does not start on a newline, like block elements do, and only take up as much width as necessary.
+
+    2. What happens when an element is positioned absolutely? 
+    it is positioned relative to the nearest positioned ancestor, but if it has no positioned ancestor, it uses the document body and moves along with the page. 
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    <element name> {
+        box-sizing: border-box; 
+    }
+
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+        3 elements that are display block by default are nav , div , and header elements. 
+        2 elements that are inline by defualt are span and img elements. 
+        One inline-block element is a ul element.
+
+    5. In your own words, explain the box model. What is the fix for the box model? 
